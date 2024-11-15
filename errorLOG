@@ -418,3 +418,141 @@ undefined
 2024-10-14 05:42:18.090 PM [[31merror[39m]>> [31mthis.petsService.getBy is not a function[39m 
 2024-10-14 05:42:35.952 PM [[32minfo[39m]>> [32mListening on 3030[39m 
 2024-10-14 05:42:37.443 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-09 10:57:35.762 AM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-09 10:57:37.381 AM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-09 10:57:38.916 AM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-09 11:07:29.755 AM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-09 11:07:31.280 AM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-11 05:48:57.170 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-11 05:48:58.647 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-11 06:22:02.127 PM [[31merror[39m]>> [31mCast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"[39m 
+2024-11-11 06:22:16.883 PM [[31merror[39m]>> [31mCast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"[39m 
+2024-11-11 06:56:44.340 PM [[31merror[39m]>> [31mUnexpected token f in JSON at position 7[39m 
+2024-11-11 07:17:33.807 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-11 07:17:35.287 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-11 07:23:26.552 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-11 07:23:28.035 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-11 07:23:38.073 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-11 07:23:39.556 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-11 07:23:43.180 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test231@1test.com" }[39m 
+2024-11-12 07:04:57.290 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-12 07:04:58.822 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-12 07:05:09.126 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test231@1test.com" }[39m 
+2024-11-12 07:05:09.349 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test231@1test.com" }[39m 
+2024-11-12 07:06:34.492 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test231@1test.com" }[39m 
+2024-11-12 07:06:34.698 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test231@1test.com" }[39m 
+2024-11-12 07:20:11.367 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e70c13847c3eace" (type string)[39m 
+2024-11-12 07:20:17.030 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e70c13847c3eace" (type string)[39m 
+2024-11-12 07:20:43.881 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e70c13847c3eace" (type string)[39m 
+2024-11-12 07:22:11.357 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e70c13847c3eacexcz" (type string)[39m 
+2024-11-12 07:22:15.914 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e7zx" (type string)[39m 
+2024-11-12 07:22:43.313 PM [[31merror[39m]>> [31mParameter "filter" to findOne() must be an object, got "670d82403e7zx" (type string)[39m 
+2024-11-12 07:50:46.596 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-12 07:50:48.133 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-12 08:18:29.007 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:19:01.252 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:20:49.978 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:21:11.418 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:21:24.187 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:24:13.502 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:25:49.967 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:26:14.949 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:26:22.061 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:26:42.942 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:27:31.570 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:31:08.828 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:34:44.030 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-12 08:34:45.541 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-12 08:34:49.028 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:35:13.641 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:40:08.988 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:44:03.139 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:45:10.681 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:45:21.665 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:45:37.501 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:46:33.119 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:46:50.992 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:47:19.259 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:31.669 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:33.744 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:34.865 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:35.729 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:36.650 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:37.365 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:52:38.025 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:53:20.153 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:53:53.039 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:54:04.543 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:54:48.854 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:55:24.171 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:55:25.926 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:56:20.512 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:56:23.799 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:56:24.771 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:59:26.232 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:59:30.934 PM [[31merror[39m]>> [31mjwt must be provided[39m 
+2024-11-12 08:59:32.407 PM [[31merror[39m]>> [31mjwt must be provided[39m 
+2024-11-12 08:59:34.943 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 08:59:37.790 PM [[31merror[39m]>> [31mjwt must be provided[39m 
+2024-11-12 09:01:56.522 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:02.741 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:15.143 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:16.056 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:16.835 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:17.501 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:18.230 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:19.588 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:20.764 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:38.285 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-12 09:03:39.111 PM [[31merror[39m]>> [31msecretOrPrivateKey must have a value[39m 
+2024-11-14 12:18:00.496 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 12:18:02.271 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 12:19:53.864 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:19:54.107 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:25:24.315 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 12:25:26.158 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 12:26:31.765 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:26:32.016 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:27:21.751 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 12:27:23.518 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 12:28:10.993 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 12:28:12.877 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 12:41:59.131 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:41:59.436 PM [[31merror[39m]>> [31mE11000 duplicate key error collection: PetDB.users index: email_1 dup key: { : "test000@1test.com" }[39m 
+2024-11-14 12:46:01.197 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 12:46:03.053 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:15:36.504 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:15:38.014 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:16:57.586 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:16:59.096 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:18:28.828 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:18:30.320 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:47:41.612 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:47:43.103 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:51:40.513 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:51:42.003 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 07:53:35.891 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 07:53:37.373 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:00:54.655 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:00:56.143 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:17:28.170 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:17:30.260 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:17:31.757 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:25:24.799 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:25:26.299 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:33:52.761 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:33:54.255 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:34:37.278 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:34:38.776 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:35:10.998 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:35:12.488 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:35:18.134 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:35:19.624 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:36:16.010 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:36:17.530 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:37:03.661 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:37:05.174 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:38:11.983 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:38:13.480 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 
+2024-11-14 08:39:10.641 PM [[32minfo[39m]>> [32mListening on 3030[39m 
+2024-11-14 08:39:12.160 PM [[32minfo[39m]>> [32mConected to [PetDB][39m 

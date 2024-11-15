@@ -1,0 +1,99 @@
+components:
+  schemas:
+    Adoption:
+      type: array
+      items:
+        properties:
+        owner:
+          type: ObjectId
+          description: Owner Id
+        pet:
+          type: ObjectId
+          description: Pet ID
+    example:
+      _id: 1231c178b1fefdcd526f8a754
+      owner: 670c178b1fefdcd312f8a754
+      pet: 670c421b1fefdcd526f8a754
+      
+    Pets:
+      type: array
+      items:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Pet ID
+          name: 
+            type: string
+            description: Pet Name
+          specie: 
+            type: string
+            description: Pet Specie
+          owner: 
+            type: ObjectId
+            description: Pet Owner ID
+          birthday: 
+            type: string
+            description: Pet Birthday
+          adopted:
+            type: boolean
+            description: Pet Adoption Status
+          image:
+            type: string
+            description: Pet Image
+      example:
+        _id: 670c178b1fefdcd526f8a502
+        name: ExamplePet 1
+        specie: Dog
+        adopted: true
+        owner: 670c178b1fefdcd526f8a654
+        image: https://danspetcare.com/pets/an-extensive-guide-to-the-most-common-dogs
+        birthday: 5/10/2020   
+  requestBody:
+    createUser:
+      type: object
+      properties:
+        name: 
+          type: string
+          description: Pet Name
+        specie: 
+          type: string
+          description: Pet Specie
+        owner: 
+          type: ObjectId
+          description: Pet Owner ID
+        birthday: 
+          type: string
+          description: Pet Birthday
+        adopted:
+          type: boolean
+          description: Pet Adoption Status
+        image:
+          type: string
+          description: Pet Image
+    User:
+      type: array
+      items:
+        properties:
+        _id:
+          type: ObjectId
+          description: User Id
+        first_name:
+          type: string
+          description: First name of the user
+        last_name:
+          type: string
+          description: Last name of the user
+        email:
+          type: string
+          description: Email of the user
+        password:
+          type: string
+          description: Pass of the user
+        role:
+          type: string
+          desciption: Role of the user
+        pets:
+          type: array
+          description: Adopted pets of the user
+
+

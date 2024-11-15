@@ -2,9 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 import 'dotenv/config'
-
+import swaggerUiExpress from 'swagger-ui-express';
+import { specs } from "./config/swaggerConfig.js";
 import router from "./routes/index.js";
-
 import { errorHandle } from "./errors/errHandle.js";
 import { logger } from "./utils/logger.js";
 
@@ -19,6 +19,12 @@ app.use("/api", router);
 
 // Middleware de manejo de errores
 app.use(errorHandle);
+//Swagger
+
+app.use('/apidocs',swaggerUiExpress.serve,swaggerUiExpress.setup(specs))
+
+
+
 
 app.listen(PORT,async() => {
     let attemp=0

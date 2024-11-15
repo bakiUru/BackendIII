@@ -44,8 +44,8 @@ export class AdoptionsController {
       user.pets.push(pet._id);
       await this.usersService.update(user._id, { pets: user.pets });
       await this.petsService.update(pet._id, { adopted: true, owner: user._id });
-      await this.adoptionsService.create({ owner: user._id, pet: pet._id });
-      res.send({ status: "success", message: "Pet adopted" });
+      const result = await this.adoptionsService.create({ owner: user._id, pet: pet._id });
+      res.send({ status: "success", message: "Pet adopted", payload: result });
     } catch (error) {
       console.log(error)
       next(error);

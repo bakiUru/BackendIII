@@ -32,9 +32,8 @@ export class PetsController {
       if (!name || !specie || !birthDate) 
         return res.status(400).send({ status: "error", error: "Incomplete values" });
       const pet =  PetDTO.getPetInputFrom({ name, specie, birthDate });
-      console.log(pet)
       const result = await this.petService.create(pet);
-      res.send({ status: "success", payload: result });
+      res.status(201).send({ status: "success", payload: result });
     } catch (error) {
       next(error);
     }

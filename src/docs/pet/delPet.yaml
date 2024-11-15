@@ -1,0 +1,27 @@
+paths:
+  /api/pets:
+    del:
+      summary: Delete a Pet
+      description: Returns a Deleted Pet
+      tags: 
+        - Pet
+      parameter:
+        in: path
+        name: pid
+        required: true
+        desciption: Id Pet
+        schema:
+          type: string
+      responses:
+        200:
+          description: Successful response Deleted Pet
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        500:
+          description: Internal Server Error
+
+

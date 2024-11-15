@@ -1,0 +1,92 @@
+paths:
+  /api/pets:
+    put:
+      summary: Update a Pet
+      description: Returns an Updated Pet
+      tags: 
+        - Pet
+      parameter:
+        in: path
+        name: pid
+        required: true
+        desciption: Id Pet
+        schema:
+          type: string
+      requestBody:
+        required: true
+        description: Pet data
+        content:
+          application/json:
+          schema:
+          $ref: '#/components/schemas/requestBody/updateUser'
+      responses:
+        200:
+          description: Successful response Updated Pet
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        500:
+          description: Internal Server Error
+
+
+
+components:
+  schemas:
+    Pets:
+      type: array
+      items:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Pet ID
+          name: 
+            type: string
+            description: Pet Name
+          specie: 
+            type: string
+            description: Pet Specie
+          owner: 
+            type: ObjectId
+            description: Pet Owner ID
+          birthday: 
+            type: string
+            description: Pet Birthday
+          adopted:
+            type: boolean
+            description: Pet Adoption Status
+          image:
+            type: string
+            description: Pet Image
+      example:
+        _id: 670c178b1fefdcd526f8a502
+        name: ExamplePet 1
+        specie: Dog
+        adopted: true
+        owner: 670c178b1fefdcd526f8a654
+        image: https://danspetcare.com/pets/an-extensive-guide-to-the-most-common-dogs
+        birthday: 5/10/2020   
+  requestBody:
+    updateUser:
+      type: object
+      properties:
+        name: 
+          type: string
+          description: Pet Name
+        specie: 
+          type: string
+          description: Pet Specie
+        owner: 
+          type: ObjectId
+          description: Pet Owner ID
+        birthday: 
+          type: string
+          description: Pet Birthday
+        adopted:
+          type: boolean
+          description: Pet Adoption Status
+        image:
+          type: string
+          description: Pet Image

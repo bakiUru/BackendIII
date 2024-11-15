@@ -1,0 +1,38 @@
+paths:
+  /api/adoptions/{uid}/{pid}:
+    get:
+      summary: Create a new Adoption
+      description: Returns a new Adoption
+      tags: 
+        - Adoptions
+      responses:
+      parameter:
+        in: path
+        name: uid
+        description: User Id
+        required: true
+        schema:
+          type: string
+        in: path
+        name: pid
+        description: Pet Id
+        required: true
+        schema:
+          type: string
+      parameter:
+
+
+
+        200:
+          description: Successful response 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Adoption'
+        500:
+          description: Internal Server Error
+
+
+    

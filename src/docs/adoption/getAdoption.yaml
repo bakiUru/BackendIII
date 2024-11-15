@@ -1,0 +1,37 @@
+paths:
+  /api/adoptions:
+    get:
+      summary: Get all Adoptions
+      description: Returns a list of all Adoptions
+      tags: 
+        - Adoptions
+      responses:
+        200:
+          description: Successful response 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Adoption'
+        500:
+          description: Internal Server Error
+
+components:
+  schemas:
+    Adoption:
+      type: array
+      items:
+        properties:
+        owner:
+          type: ObjectId
+          description: Owner Id
+        pet:
+          type: ObjectId
+          description: Pet ID
+    example:
+      _id: 1231c178b1fefdcd526f8a754
+      owner: 670c178b1fefdcd312f8a754
+      pet: 670c421b1fefdcd526f8a754
+    
+

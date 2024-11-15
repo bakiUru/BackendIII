@@ -1,0 +1,47 @@
+paths:
+  /api/pets:
+    get:
+      summary: Get all pets
+      description: Returns a list of all pets
+      tags: 
+        - Pet
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        500:
+          description: Internal Server Error
+
+
+components:
+  schemas:
+    Pets:
+      type: array
+      items:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Pet ID
+          name: 
+            type: string
+            description: Pet Name
+          specie: 
+            type: string
+            description: Pet Specie
+          owner: 
+            type: ObjectId
+            description: Pet Owner ID
+          birthday: 
+            type: string
+            description: Pet Birthday
+          adopted:
+            type: boolean
+            description: Pet Adoption Status
+          image:
+            type: string
+            description: Pet Image

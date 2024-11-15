@@ -4,6 +4,9 @@ import UserDTO from "../dto/User.dto.js";
 import { UserServices } from "../services/user.services.js";
 import 'dotenv/config'
 
+
+console.log(process.env.JWT_SECRET)
+
 export class SessionsController {
   constructor() {
     this.userServices = new UserServices();
@@ -29,9 +32,9 @@ export class SessionsController {
       next(error);
     }
   };
-
+  
   login = async (req, res, next) => {
-    console.log(req.body)
+    
     try {
       const { email, password } = req.body;
       if (!email || !password) 
@@ -39,11 +42,11 @@ export class SessionsController {
 
       const user = await this.userServices.getUserByEmail(email);
         if (!user) return res.status(404).send({ status: "error", error: "User doesn't exist" });
-
       const isValidPassword = await passwordValidation(user, password);
+      console.log('es valid?', isValidPassword)
       if (!isValidPassword) return res.status(400).send({ status: "error", error: "Incorrect password" });
       const userDto = UserDTO.getUserTokenFrom(user);
-      const token = jwt.sign(userDto, process.env.SECRET_JWT, { expiresIn: "1h" });
+      const token = jwt.sign(userDto, process.env.JWT_SECRET, { expiresIn: "1h" });
       res.cookie(process.env.SECRET_COOKIE, token, 
       { 
         httpOnly: true,
@@ -57,7 +60,7 @@ export class SessionsController {
   current = async (req, res, next) => {
     try {
       const cookie = req.cookies[process.env.SECRET_COOKIE];
-      const user = jwt.verify(cookie, process.env.SECRET_JWT);
+      const user = jwt.verify(cookie, process.env.JWT_SECRET);
       if (user) return res.send({ status: "success", payload: user });
     } catch (error) {
       next(error);
@@ -69,10 +72,11 @@ export class SessionsController {
       const { email, password } = req.body;
       if (!email || !password) return res.status(400).send({ status: "error", error: "Incomplete values" });
       const user = await this.userServices.getUserByEmail(email);
+      console.log(user)
       if (!user) return res.status(404).send({ status: "error", error: "User doesn't exist" });
       const isValidPassword = await passwordValidation(user, password);
       if (!isValidPassword) return res.status(400).send({ status: "error", error: "Incorrect password" });
-      const token = jwt.sign({role:user.role,email:user.email,name:user.first_name}, process.env.SECRET_JWT, { expiresIn: "1h" });
+      const token = jwt.sign({role:user.role,email:user.email,name:user.first_name}, process.env.JWT_SECRET, { expiresIn: "1h" });
       res
         .cookie("unprotectedCookie", token, { maxAge: 3600000 })
         .send({ status: "success", message: "Unprotected Logged in", payload: user });
@@ -81,11 +85,11 @@ export class SessionsController {
       next(error);
     }
   };
-
+  
   unprotectedCurrent = async (req, res, next) => {
     try {
       const cookie = req.cookies["unprotectedCookie"];
-      const user = jwt.verify(cookie, process.env.SECRET_JWT);
+      const user = jwt.verify(cookie, process.env.JWT_SECRET);
       if (user) return res.send({ status: "success", payload: user });
     } catch (error) {
       next(error);

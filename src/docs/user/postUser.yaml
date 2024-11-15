@@ -1,0 +1,86 @@
+paths:
+  /api/users:
+    post:
+      summary: Create a new User
+      description: Returns a new User Created
+      tags: 
+        - User
+      requestBody:
+        required: true
+        description: User data
+        content:
+          application/json:
+          schema:
+          $ref: '#/components/schemas/requestBody/createUser'
+      responses:
+        201:
+          description: Successful response a new User
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        500:
+          description: Internal Server Error
+
+components:
+  schemas:
+    User:
+      type: array
+      items:
+        properties:
+        _id:
+          type: ObjectId
+          description: User Id
+        first_name:
+          type: string
+          description: First name of the user
+        last_name:
+          type: string
+          description: Last name of the user
+        email:
+          type: string
+          description: Email of the user
+        password:
+          type: string
+          description: Pass of the user
+        role:
+          type: string
+          desciption: Role of the user
+        pets:
+          type: array
+          description: Adopted pets of the user
+      example:
+        _id: 670c178b1fefdcd526f8a754
+        first_name: ExampleUser1
+        last_name: ExampleUserLast
+        email: user@test.com
+        password: 123456
+        role: user
+        pets: [670c178b1fefdcd526f8a111,670c199b1fefdcd526f8a734]
+  requestBody:
+    createUser:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: First name of the user
+        last_name:
+          type: string
+          description: Last name of the user
+        email:
+          type: string
+          description: Email of the user
+        password:
+          type: string
+          description: Pass of the user
+        role:
+          type: string
+          desciption: Role of the user
+        pets:
+          type: array
+          description: Adopted pets of the user
+
+
+

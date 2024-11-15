@@ -1,0 +1,25 @@
+paths:
+  /api/users:
+    del:
+      summary: Delete an User
+      description: Returns an User Deleted
+      tags: 
+        - User
+      parameter:
+        in: path
+        name: uid
+        required: true
+        desciption: Id User
+        schema:
+          type: string
+      responses:
+        200:
+          description: Successful response an Deleted User 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        500:
+          description: Internal Server Error
