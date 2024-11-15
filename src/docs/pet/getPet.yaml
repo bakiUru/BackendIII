@@ -20,7 +20,7 @@ paths:
 
 components:
   schemas:
-    Pets:
+    Pet:
       type: array
       items:
         properties:
@@ -45,3 +45,11 @@ components:
           image:
             type: string
             description: Pet Image
+      example:
+        _id: 670c178b1fefdcd526f8a502
+        name: ExamplePet 1
+        specie: Dog
+        adopted: true
+        owner: 670c178b1fefdcd526f8a654
+        image: https://danspetcare.com/pets/an-extensive-guide-to-the-most-common-dogs
+        birthday: 5/10/2020   
