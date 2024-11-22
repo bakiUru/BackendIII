@@ -108,6 +108,13 @@ Cuerpo de la solicitud: Un objeto JSON con los datos del Usuario.
 ## Seguridad
 
 Para proteger los datos de los usuarios y las mascotas, la API cuenta con un sistema de autenticación basado en tokens JWT.
+
+## DOCKER
+
+```bash
+https://hub.docker.com/layers/bakidev/entregafinal/latest/images/sha256:c477e4f1846d1fcd285ea6a830f0abb2dce699b26fe131261791272aa29f0ad6?uuid=F263425D-D3AF-4686-9C14-BBA919BBA62C
+```
+
 ## Documentation
 
 [Documentation](http://localhost:3030/apidocs)
